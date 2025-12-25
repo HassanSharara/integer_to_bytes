@@ -1,0 +1,22 @@
+[package]
+name = "integer_to_bytes"
+version = "0.1.0"
+edition = "2024"
+authors = ["Hassan Sharara <hassansharara12@gmail.com>"]
+repository = "https://github.com/HassanSharara/water_http"
+homepage = "https://github.com/HassanSharara"
+license = "MIT"
+description = "fast converting integers to human readable bytes and specially for http streaming"
+categories = ["development-tools","algorithms"]
+keywords = ["http", "water_http", "water-http","water-server"]
+
+
+[dependencies]
+bytes = { version = "1.11.0"}
+
+
+[dev-dependencies]
+itoa = "1.0.16"
+
+
+
