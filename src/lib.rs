@@ -20,6 +20,16 @@ impl BufferFilling for  BytesMut {
     }
 }
 
+impl BufferFilling for  ntex_bytes::BytesMut {
+    fn extend_from_slice_ef(&mut self, slice: &[u8]) {
+        self.extend_from_slice(slice);
+    }
+
+    fn put_u8_ef(&mut self, slice: u8) {
+        self.put_u8(slice);
+    }
+}
+
 
 
 macro_rules! impl_human_int {
