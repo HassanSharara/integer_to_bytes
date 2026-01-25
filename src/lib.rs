@@ -20,6 +20,16 @@ impl BufferFilling for  BytesMut {
     }
 }
 
+impl BufferFilling for water_buffer::WaterBuffer<u8> {
+    fn extend_from_slice_ef(&mut self, slice: &[u8]) {
+        self.extend_from_slice(slice)
+    }
+
+    fn put_u8_ef(&mut self, slice: u8) {
+        let data = [slice];
+        self.extend_from_slice_ef(&data);
+    }
+}
 impl BufferFilling for  ntex_bytes::BytesMut {
     fn extend_from_slice_ef(&mut self, slice: &[u8]) {
         self.extend_from_slice(slice);
