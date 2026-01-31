@@ -1,9 +1,9 @@
 [package]
 name = "integer_to_bytes"
-version = "0.1.4-Beta.2"
+version = "0.1.4-Beta.4"
 edition = "2024"
 authors = ["Hassan Sharara <hassansharara12@gmail.com>"]
-repository = "https://github.com/HassanSharara/water_http"
+repository = "https://github.com/HassanSharara/integer_to_bytes"
 homepage = "https://github.com/HassanSharara"
 license = "MIT"
 description = "fast converting integers to human readable bytes and specially for http streaming"
@@ -14,7 +14,7 @@ keywords = ["http", "water_http", "water-http","water-server"]
 [dependencies]
 bytes = { version = "1.11.0"}
 ntex-bytes = "1.0.0"
-water_buffer = "1.2.2-Beta.20"
+water_buffer = {version =  "1.2.2-Beta.21",git = "https://github.com/HassanSharara/water_buffer" }
 
 
 [dev-dependencies]
