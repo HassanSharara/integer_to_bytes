@@ -65,8 +65,14 @@ macro_rules! impl_human_int {
 }
 
 impl_human_int!(u8, 3);
+impl_human_int!(i8, 3);
 impl_human_int!(u16, 5);
+impl_human_int!(i16, 5);
 impl_human_int!(u32, 10);
+impl_human_int!(i32, 10);
 impl_human_int!(u64, 20);
+impl_human_int!(i64, 20);
 impl_human_int!(usize, 20);
+impl_human_int!(isize, 20);
 impl_human_int!(u128, 39);
+impl_human_int!(i128, 39);
